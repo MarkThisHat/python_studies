@@ -33,6 +33,7 @@ def search(query: list[str], first=32, last=sys.maxunicode) -> None:
     name = unicodedata.name(char, None)
     if name is None:
       continue
+    name = name.replace('-', ' ')
     name = set(name.split())
     if query <= name:
       print(f'U+{code:04X}\t{char}\t{unicodedata.name(char)}')
