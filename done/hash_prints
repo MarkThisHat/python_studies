@@ -1,0 +1,7 @@
+Python 3.11.2 (main, May  2 2024, 11:59:08) [GCC 12.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print(hash('Marcos'))
+>>> print(bin(hash('Marcos')))
+
+-845484235368737535
+-0b101110111011110000110110111010111000010110001010101011111111
