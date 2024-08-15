@@ -4,10 +4,10 @@
 >>> main([])
 Provide search keywords
 
->>> main(["cruzeiro"])
+>>> main(["cruzeiro"]) # doctest: +NORMALIZE_WHITESPACE
 U+20A2\t\N{CRUZEIRO SIGN}\tCRUZEIRO SIGN
 
->>> search(["cat"], 0x1f408, 0x1f640)
+>>> search(["cat"], 0x1f408, 0x1f640) # doctest: +NORMALIZE_WHITESPACE
 U+1F408\t🐈\tCAT
 U+1F431\t🐱\tCAT FACE
 U+1F638\t😸\tGRINNING CAT FACE WITH SMILING EYES
@@ -20,6 +20,8 @@ U+1F63E\t😾\tPOUTING CAT FACE
 U+1F63F\t😿\tCRYING CAT FACE
 U+1F640\t🙀\tWEARY CAT FACE
 
+>>> search(['cat', 'heart'], 0x1f408, 0x1f640) # doctest: +NORMALIZE_WHITESPACE
+U+1F63B	😻	SMILING CAT FACE WITH HEART-SHAPED EYES
 
 """
 import sys
