@@ -1,0 +1,19 @@
+dander eq has to be implemented on each class, because the default only compares identities
+dander repr inherited is usually crappy
+namedtuple is a class factory
+python nao checa tipos em tempo de execucao mas os typecheckers sim
+dander new CRIA a instancia, dander init ATRIBUI cada info
+exemplo de checador de codigo mypy
+dander str eh tipo overload de << ?
+sempre que puder ter objetos imutaveis, tenha-o, FACILITA SUA VIDA
+elixir eh herdado de erlang que tem 9 9 de confiabilidade 99.9999999
+usa namedtuple antes, se precisar muito modificar as classes usa as dataclass
+dander annotations eh o que todas as ferramentas que procuram tipos vao procurar
+elixir e erlang usam gambiarras tipo x._replace(...) pra fazer modificacoes
+typing.namedtuple consegue criar classe em tempo de execucao, apeasr de ser menos elegante
+dander dict da classe e as instancias tem um dander dict com os atributos da instancia, dict vazio ja tem oito linhas de instancias de bucket. eh possivel criar um dander slots na definicao da classe pra manter as instancias dessa classe imutaveis e obriga a ter esses nomes apenas - tipo cria um ponteiro pra mesma referencia de slots
+hash precisa ser feito em objetos imutaveis, senao pode acontecer por exemplo de nao conseguir recuperar o mesmo de um dicionario, ele pode ser interpretado como colisao de hash se sofrer mutations la dentro
+eh possivel colocar algumas definicoes default de atributos caso nao sejam passados no construtor (pablo salgado virou coredev e melhorou as documentacoes do pitao) TODO ATRIBUTO DE CLASSE EH COMPARTILHADO ENTRE TODAS AS INSTANCIAS por isso eh embacado iniciar list[] = []
+nao use objetos mutaveis como valor padrao em pitao
+o field que usa pra fazer os atributos do construtor
+do dataclass
