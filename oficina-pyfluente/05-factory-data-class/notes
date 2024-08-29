@@ -17,3 +17,6 @@ eh possivel colocar algumas definicoes default de atributos caso nao sejam passa
 nao use objetos mutaveis como valor padrao em pitao
 o field que usa pra fazer os atributos do construtor
 do dataclass
+type eh uma fabrica de classes, eh uma metaclasse (classe cujas instancias sao classes)
+instrucao class cria uma variavel global que contem essa classe
+eh possivel criar tuplas de 1 no python, com uma virgula no final (str,)

@@ -1,0 +1,2 @@
+class NomeDaClasse():
+NomeDaClasse = type('NomeDaClasse',(str, ),{'x': 10)}
